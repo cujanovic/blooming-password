@@ -1,0 +1,5 @@
+vegeta attack -targets=benchmark-test.txt -rate=25 -duration=60s | vegeta report -type=text
+
+ulimit -n 65535
+sysctl -w net.core.somaxconn=2048
+# net.core.somaxconn = 2048
